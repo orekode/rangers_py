@@ -36,7 +36,7 @@ def mysqlconnect():
     # To close the connection 
     conn.close()
 
-    return "done"
+    return output
 
 
 
