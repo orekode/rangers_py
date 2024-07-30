@@ -30,7 +30,7 @@ def mysqlconnect():
         output = cur.fetchall() 
         print(output) 
     except Exception as e:
-        print e
+        prints(e)
         return e
       
     # To close the connection 
