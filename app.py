@@ -18,6 +18,7 @@ def index():
     cursor.execute(''' INSERT INTO test VALUES(%s,%s)''',('david','12'))
     mysql.connection.commit()
     cursor.close()
+    print()
     return f"Done!!"
 
 #implement bulk upload
