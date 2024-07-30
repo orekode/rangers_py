@@ -1,24 +1,24 @@
 from flask import Flask
-from flask_mysqldb import MySQL
+# from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 
  
-app.config['MYSQL_HOST'] = 'https://rapidcrewtech.com/'
-app.config['MYSQL_USER'] = 'rapidcre_rangers'
-app.config['MYSQL_PASSWORD'] = 'rangers@hack@thon'
-app.config['MYSQL_DB'] = 'rapidcre_rangers'
+# app.config['MYSQL_HOST'] = 'https://rapidcrewtech.com/'
+# app.config['MYSQL_USER'] = 'rapidcre_rangers'
+# app.config['MYSQL_PASSWORD'] = 'rangers@hack@thon'
+# app.config['MYSQL_DB'] = 'rapidcre_rangers'
  
-mysql = MySQL(app)
+# mysql = MySQL(app)
 
 
 @app.route('/')
 def index():
-    cursor = mysql.connection.cursor()
-    cursor.execute(''' INSERT INTO test VALUES(%s,%s)''',('david','12'))
-    mysql.connection.commit()
-    cursor.close()
-    print()
+    # cursor = mysql.connection.cursor()
+    # cursor.execute(''' INSERT INTO test VALUES(%s,%s)''',('david','12'))
+    # mysql.connection.commit()
+    # cursor.close()
+    # print()
     return f"Done!!"
 
 #implement bulk upload
