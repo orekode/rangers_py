@@ -20,6 +20,7 @@ def mysqlconnect():
         user='root',  
         password = "NBbvNdqSypiTHQVCTWAaXLXxrfbeStvK", 
         db='railway',
+        port='3306'
     )
       
     cur = conn.cursor() 
